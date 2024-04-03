@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Shopify Variants Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Variants Management System that allows users to manage product variants easily. It includes features such as adding, editing, and deleting options, as well as generating variants based on the selected options.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Product**: Users can add new products with their respective options and variants.
+- **Edit Product**: Users can edit existing product details, including options and variants.
+- **Manage Options**: Users can add, edit, and delete options for products.
+- **Generate Variants**: The system can automatically generate variants based on selected options.
+- **View Variants**: Users can view all generated variants for a product and perform actions such as editing or deleting them.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend development and user interface.
+- **Firebase Firestore**: Backend database for storing product and variant information.
+- **Firebase Authentication**: User authentication and authorization.
+- **FontAwesome Icons**: Used for graphical icons in the user interface.
+- **CSS**: Styling and layout of the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository: `git clone https://github.com/your-username/variants-management.git`
+2. Install dependencies: `npm install`
+3. Configure Firebase: Set up Firebase Firestore and Authentication for database and user management.
+4. Run the application: `npm start`
 
-Launches the test runner in the interactive watch mode.\
+## Folder Structure
+
+- `src/`: Contains all source code files for the frontend application.
+  - `Assets/`: Contains images and other assets used in the application.
+  - `Components/`: Contains React components for different parts of the application.
+  - `config/`: Configuration files for Firebase and other services.
+  - `Pages/`: Contains main pages or screens of the application.
+  - `utils/`: Utility functions and helper scripts.
 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
