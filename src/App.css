@@ -1,38 +1,383 @@
-.App {
-  text-align: center;
-}
+/**app styles */
+.App{
+ 
+  overflow-x: hidden;
+  height: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 0;
+  overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-body{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+/* Header Styles */
+.top-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo img {
+  width: 70px; /* Adjust as needed */
+  height: auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* SideMenu Styles */
+.side-menu {
+  background-color: #11101D;
+  padding: 20px 10px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 30px;
+}
+
+.side-menu ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+
+.side-menu ul li a span {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.side-menu ul li a:hover {
+  background-color: #1d1b31;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.side-menu .logo{
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/**product form*/
+.product{
+position: relative;
+left: 10%;
+top: -5%;
+
+  background-color:  #f1f1f1;
+  padding: 10px;
+  height: 100%;
+
+margin-bottom: 1200px;
+  
+ 
+}
+.product-form
+{
+  width: 700px;
+}
+.product-form input{
+  width: 60%;
+  padding: 10px;
+ 
+}
+
+.product-form input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+.new-product{
+  border: none;
+  background-color: #fff;
+  color: blue;
+  translate: 350px -40px;
+}
+
+
+
+/* Path: shopify_variants/src/components/Product.js */
+/*options styles*/
+.saved-option{
+border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.saved-option .grip-icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  translate: -30px 35px;
+}
+.saved-option li{
+  display: block;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.saved-option li:hover{
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.saved-option li::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #b0b0b1;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.saved-option span{
+  margin-left: 10px;
+  
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #cdcdce;
+}
+.saved-option button{
+ margin-left: 5px;
+  background-color: #fff;
+  color: #271579;
+  cursor: pointer;
+}
+#btn-saveoption{
+  translate: 50px -10px;
+  border: 1px solid #271579;
+}
+
+
+
+/*Variants styles*/
+.variants{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.variants variant{
+  display: block;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.variants .variants-list{
+  padding: 10px;
+}
+.variants .variants-list div::after{
+  content: "";
+ width: 100%;
+  height: 1px;
+  background-color: #b0b0b1;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.variant  input{
+
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.variants-header span{
+  margin-left: 40px;
+  
+  
+}
+.filter-variants{
+  margin: 5px;
+}
+.filter-variants input{
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.filter-variants button,.filter-variants label{
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  
+  color: #2c1888;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.filter-variants select{
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.variants-check{
+  margin: 10px;
+}
+.variants-check span{
+  margin-left: 30px;
+  margin-right: 20px;
+
+}
+.variants-check select{
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.variants-table{
+  margin-top: 20px;
+
+}
+.variants-table input{
+  width: 100px;
+  height: 35px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.variants-table tbody{
+  margin-top: 15px;
+}
+.variants-table tbody  tr {
+
+  border-bottom: 1px solid #ccc; /* Add a bottom border to each row */
+}
+.variants-table   td, th {
+  padding: 10px; /* Add padding to cells */
+  text-align: left;
+}
+ 
+/**Add product from */
+.add-product{
+
+  width: 300px;
+  height: 600px;
+  
+}
+.product-header{
+ 
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  
+
+  border-radius: 5px;
+}
+.product-header h4{
+  margin: 10px;
+  
+}
+.add-product .btn-submit{
+  width: 50%;
+  height: 40px;
+  background-color: #271579;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-product .btn-submit:hover{
+  background-color: #fff;
+  color: #271579;
+}
+.add-product .btn-cancel{
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  color: #271579;
+  border: 1px solid #271579;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**product from */
+#btn-saveproduct{
+  width: 40%;
+  position: relative;
+  top: 50px;
+  height: 50px;
+  background-color: #271579;
+  color: #fff;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+#btn-saveproduct:hover{
+  background-color: #fff;
+  color: #271579;
+}
+#btn-cancelproduct{
+  width: 40%;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  background-color: #fff;
+  color: #271579;
+  margin: 10px;
+  border: 1px solid #271579;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+#btn-cancelproduct:hover{
+  background-color: #c6c5ca;
+  color: #fff;
+}
+
+/**Home page */
+.home{
+ margin-left: 20px;
+  margin-top: 20px;
+  width: 900px;
+  height: 900px;
+  translate: 200px 85px;
+ 
+}
+.btn-addnew{
+  width: 180px;
+  height: 40px;
+  background-color: #271579;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ translate: 400px ;
 }
